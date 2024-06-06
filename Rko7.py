@@ -2,6 +2,7 @@ library(tidyverse)
 library(dplyr)
 library(lubridate)
 library(ggplot2)
+setwd("C:/Users/dragy/Documents/ZZD/ZZD")
 tab <- read.csv("shootings.csv")
 
 tab2 <- tab %>% group_by(state) %>% summarise(total = n()) %>% slice_max(order_by = total, n = 5)

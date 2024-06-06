@@ -1,0 +1,9 @@
+---
+title: "Ahoj"
+output: html_document
+---
+### YES YES YES
+```{r}
+tab <- read.csv("shootings.csv")
+head(tab)
+```
